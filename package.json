@@ -1,0 +1,19 @@
+{
+  "name": "aws-cost-scenarios",
+  "version": "1.0.0",
+  "description": "Four AWS architecture defaults that inflate the bill, priced with public list prices for Paris, Frankfurt, the UAE, Bahrain and N. Virginia, with the formulas and a small CLI.",
+  "type": "module",
+  "main": "src/scenarios.js",
+  "exports": {
+    ".": "./src/scenarios.js",
+    "./prices": "./src/prices.js"
+  },
+  "bin": { "aws-cost-scenarios": "bin/aws-cost-scenarios.js" },
+  "files": ["src", "bin"],
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=18" },
+  "keywords": ["aws", "finops", "cloud-costs", "nat-gateway", "cross-az", "spot", "dynamodb"],
+  "homepage": "https://www.koyotec.digital/engineering/en/cloud-costs/",
+  "author": "KOYOTEC Engineering (https://www.koyotec.digital/engineering/en/)",
+  "license": "MIT"
+}
